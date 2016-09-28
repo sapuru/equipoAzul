@@ -52,6 +52,20 @@ public class Parcial {
                 break;
             case 2:
                 //superficie del triangulo
+                float base;
+                float altura;
+                String cadenaBase;
+                String cadenaAltura;
+                float superficie;
+                
+                cadenaBase = JOptionPane.showInputDialog(null, "Ingresa la base del triangulo");
+                base = Float.parseFloat (cadenaBase);
+                cadenaAltura = JOptionPane.showInputDialog(null, "Ingresa la altura del triangulo");
+                altura = Float.parseFloat(cadenaAltura);
+                superficie = base + altura / 2 ;
+                
+                JOptionPane.showMessageDialog(null, "Esta es la superficie del triangulo = "+superficie);
+                
                 break;
             case 3:
                 //perimetro del cuadrado
