@@ -31,6 +31,24 @@ public class Parcial {
         switch (numeroSw) {
             case 1:
                 //perimetro del triangulo
+                int lado1;
+                int lado2;
+                int lado3;
+                String cadenaLado1;
+                String cadenaLado2;
+                String cadenaLado3;
+                int perimetro;
+
+                cadenaLado1 = JOptionPane.showInputDialog(null, "Ingrese longitud del lado 1: ");
+                lado1 = Integer.parseInt(cadenaLado1);
+                cadenaLado2 = JOptionPane.showInputDialog(null, "Ingrese longitud del lado 1: ");
+                lado2 = Integer.parseInt(cadenaLado2);
+                cadenaLado3 = JOptionPane.showInputDialog(null, "Ingrese longitud del lado 1: ");
+                lado3 = Integer.parseInt(cadenaLado3);
+                perimetro=lado1+lado2+lado3;
+                
+                JOptionPane.showMessageDialog(null, "El perímetro del triángulo es: "+perimetro);
+               
                 break;
             case 2:
                 //superficie del triangulo
@@ -43,8 +61,9 @@ public class Parcial {
                 break;
             case 5:
                 //salir
+                break;
             default:
-                throw new AssertionError();
+                JOptionPane.showMessageDialog(null,"Opción No válida");
         }
     }
     
