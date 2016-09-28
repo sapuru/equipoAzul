@@ -69,6 +69,30 @@ public class Parcial {
                 break;
             case 3:
                 //perimetro del cuadrado
+                double lado1;
+                double lado2;
+                double lado3;
+                double lado4;
+                double perimetro;
+                
+                String cadenaLado1;
+                String cadenaLado2;
+                String cadenaLado3;
+                String cadenaLado4;
+                
+                cadenaLado1=JOptionPane.showInputDialog(null,"Ingresar el lado 1");
+                lado1=Double.parseDouble(cadenaLado1);
+                cadenaLado2=JOptionPane.showInputDialog(null,"Ingresar el lado 2");
+                lado2=Double.parseDouble(cadenaLado2);
+                cadenaLado3=JOptionPane.showInputDialog(null,"Ingresar el lado 3");
+                lado3=Double.parseDouble(cadenaLado3);
+                cadenaLado4=JOptionPane.showInputDialog(null,"Ingresar el lado 4");
+                lado4=Double.parseDouble(cadenaLado4);
+                
+                perimetro=lado1+lado2+lado3+lado4;
+                
+                JOptionPane.showMessageDialog(null,"El perimetro es: "+perimetro);
+                
                 break;
             case 4:
                 //superficie del cuadrado
