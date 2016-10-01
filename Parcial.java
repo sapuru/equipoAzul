@@ -96,6 +96,17 @@ public class Parcial {
                 break;
             case 4:
                 //superficie del cuadrado
+        float a;
+        float area;
+        
+        String cadenaLadoa;
+        
+        cadenaLadoa=JOptionPane.showInputDialog(null, "Ingrese el valor deun de los lados del cuadrado: ");
+        a=Float.parseFloat(cadenaLadoa);
+        
+        area= a*a;
+        
+        JOptionPane.showMessageDialog(null, "El Área del cuadrado es: "+area+"")
                 break;
             case 5:
                 //salir
