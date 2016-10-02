@@ -69,29 +69,29 @@ public class Parcial {
                 break;
             case 3:
                 //perimetro del cuadrado
-                double lado1;
-                double lado2;
-                double lado3;
-                double lado4;
-                double perimetro;
+                double ladoA;
+                double ladoB;
+                double ladoC;
+                double ladoD;
+                double per;
                 
-                String cadenaLado1;
-                String cadenaLado2;
-                String cadenaLado3;
-                String cadenaLado4;
+                String cadenaLadoA;
+                String cadenaLadoB;
+                String cadenaLadoC;
+                String cadenaLadoD;
                 
-                cadenaLado1=JOptionPane.showInputDialog(null,"Ingresar el lado 1 del cuadrado");
-                lado1=Double.parseDouble(cadenaLado1);
-                cadenaLado2=JOptionPane.showInputDialog(null,"Ingresar el lado 2 del cuadrado");
-                lado2=Double.parseDouble(cadenaLado2);
-                cadenaLado3=JOptionPane.showInputDialog(null,"Ingresar el lado 3 del cuadrado");
-                lado3=Double.parseDouble(cadenaLado3);
-                cadenaLado4=JOptionPane.showInputDialog(null,"Ingresar el lado 4 del cuadrado");
-                lado4=Double.parseDouble(cadenaLado4);
+                cadenaLadoA=JOptionPane.showInputDialog(null,"Ingresar el lado 1 del cuadrado");
+                ladoA=Double.parseDouble(cadenaLadoA);
+                cadenaLadoB=JOptionPane.showInputDialog(null,"Ingresar el lado 2 del cuadrado");
+                ladoB=Double.parseDouble(cadenaLadoB);
+                cadenaLadoC=JOptionPane.showInputDialog(null,"Ingresar el lado 3 del cuadrado");
+                ladoC=Double.parseDouble(cadenaLadoC);
+                cadenaLadoD=JOptionPane.showInputDialog(null,"Ingresar el lado 4 del cuadrado");
+                ladoD=Double.parseDouble(cadenaLadoD);
                 
-                perimetro=lado1+lado2+lado3+lado4;
+                per=ladoA+ladoB+ladoC+ladoD;
                 
-                JOptionPane.showMessageDialog(null,"El perimetro del cuadrado es: "+perimetro);
+                JOptionPane.showMessageDialog(null,"El perimetro del cuadrado es: "+per);
                 
                 break;
             case 4:
@@ -101,15 +101,15 @@ public class Parcial {
         
         String cadenaLadoa;
         
-        cadenaLadoa=JOptionPane.showInputDialog(null, "Ingrese el valor deun de los lados del cuadrado: ");
+        cadenaLadoa=JOptionPane.showInputDialog(null, "Ingrese el valor de uno de los lados del cuadrado: ");
         a=Float.parseFloat(cadenaLadoa);
         
         area= a*a;
         
-        JOptionPane.showMessageDialog(null, "El Área del cuadrado es: "+area+"")
+        JOptionPane.showMessageDialog(null, "El Área del cuadrado es: "+area+"");
                 break;
             case 5:
-                //salir
+                JOptionPane.showMessageDialog(null,"Salir");
                 break;
             default:
                 JOptionPane.showMessageDialog(null,"Opción No válida");
